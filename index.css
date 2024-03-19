@@ -1,0 +1,179 @@
+
+*{
+  margin: 0;
+  padding-top: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 2%;
+  position: relative; 
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('veritech.png'); 
+  background-position: initial;
+  background-repeat:repeat;
+  opacity: 0.3; 
+  z-index: -1; 
+}
+.main p {
+  margin-top: 4vh;
+}
+
+section {
+padding: 1rem;
+}
+
+h2 {
+text-align: center;
+}
+
+.team-member {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.team-member img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+
+p {
+text-align: center;
+margin-top: 2rem;
+font-weight: bold;
+}
+
+.centered {
+text-align: center; 
+}
+
+.i-tag{
+  color: rgb(220, 48, 191);
+}
+
+.span-container{
+  text-align: center; 
+  margin-top: 3vh;
+}
+
+.span-leader {
+  display: inline-block;
+  background-color: rgb(241, 8, 175); 
+  padding: 0.5rem 1rem; 
+  margin: 0;
+  font-size: 2vw;
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 1rem;
+}  
+.span-leader:hover {
+  background-color: rgba(233, 9, 166, 0.8); 
+  transform: translateY(-8px) scale(1.1);
+  background-color: rgb(95, 154, 182);
+
+}         
+
+#h1{
+  display: inline; 
+  padding: 3vh 3vw;
+  font-size:xx-large;
+  background-color: rgb(80, 141, 169);
+  color: black;
+
+
+}
+
+.col-ls-3{
+height: 15px;
+width: 600px;
+display: flex;
+justify-content: center;
+text-align: center;
+border-bottom: 2px dashed purple;
+margin: 0 auto;
+}
+
+#leaders{
+  text-align: center;
+}
+
+.members-2{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.members-3{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.members-4{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  body {
+      margin-top: 5%;           
+  }
+
+  .main p {
+      margin-top: 3vh; 
+  }
+
+  section {
+    padding: 0.5rem; 
+  }
+
+  h2 {
+    font-size: 1.5rem; 
+  }
+
+  .team-member {
+    margin-bottom: 1rem;
+  }
+  .team-member img {
+    width: 80px; 
+    height: 80px; 
+  }
+
+  p {
+    margin-top: 1rem; 
+    font-size: 0.9rem; 
+  }
+
+  .span-container {
+    margin-top: 2vh; 
+  }
+
+  .span-leader {
+    font-size: 1.5rem; 
+  }
+
+  #h1 {
+    padding: 2vh 2vw; 
+    font-size: large; 
+  }
+
+  .col-ls-3 {
+    width: 90%; 
+  }
+
+  .members-2,
+  .members-3,
+  .members-4 {
+    flex-wrap: wrap; 
+  }
+}
